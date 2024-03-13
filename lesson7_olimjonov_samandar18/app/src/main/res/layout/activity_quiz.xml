@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_design"
+    tools:context=".view.QuizActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/test_state"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_yellow_design"
+        android:gravity="center"
+        android:text="5 / 7"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="40dp"
+            android:background="@drawable/question_background"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:text="QUESTION" />
+
+
+        <RadioGroup
+            android:id="@+id/variants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/radiogroup_item_selected_background"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="Variant" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/radiogroup_item_selected_background"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="Variant" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/radiogroup_item_selected_background"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="Variant" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/radiogroup_item_selected_background"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="Variant" />
+
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_quiz_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_change"
+            android:text="back"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_change"
+            android:text="NEXT"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</FrameLayout>
